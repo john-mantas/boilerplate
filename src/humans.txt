@@ -1,0 +1,9 @@
+﻿/* PROJECT */
+
+Site Name: Front end Boilerplate
+
+/* AUTHOR */
+
+Name: John Mantas
+Location: Athens, Greece
+Site: johnmantas.com

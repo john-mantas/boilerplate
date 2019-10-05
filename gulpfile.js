@@ -92,6 +92,13 @@ function images () {
 
 exports.images = images;
 
+// ===== FONT Tasks =====
+function fonts () {
+  return gulp
+  .src(paths.fonts.src)
+  .pipe(gulp.dest(paths.fonts.dest))
+}
+
 // ===== BrowserSync Reload =====
 const browsersync = require('browser-sync');
 
@@ -130,7 +137,7 @@ function copy() {
 }
 
 // Build the distribution folder
-const build = gulp.parallel(html, styles, scripts, images, copy);
+const build = gulp.parallel(html, styles, scripts, images, fonts, copy);
 
 exports.build = build;
 

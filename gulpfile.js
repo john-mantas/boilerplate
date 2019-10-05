@@ -112,7 +112,7 @@ function reload(done) {
 // ===== WATCH files =====
 function watchFiles() {
   gulp.watch(paths.html.src, gulp.series(html, reload));
-  gulp.watch(paths.styles.src, gulp.series(styles, reload));
+  gulp.watch([paths.styles.src, `!${paths.styles.cssDest}/**/*.*`], gulp.series(styles, reload));
   gulp.watch(paths.scripts.src, gulp.series(scripts, reload));
   gulp.watch(paths.images.src, gulp.series(images, reload));
 }

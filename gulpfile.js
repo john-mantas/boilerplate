@@ -17,6 +17,10 @@ const paths = {
   images: {
     src: 'src/images/**/*.+(gif|jpg|jpeg|png|svg)',
     dest: 'dist/images'
+  },
+  fonts: {
+    src: 'src/fonts/**/*.+(woff|woff2|otf|eot|ttf|svg)',
+    dest: 'dist/fonts'
   }
 };
 
